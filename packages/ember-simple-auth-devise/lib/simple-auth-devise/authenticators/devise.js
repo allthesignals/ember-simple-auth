@@ -154,6 +154,7 @@ export default Base.extend({
       type:       'POST',
       data:       data,
       dataType:   'json',
+      contentType: 'application/json; charset=UTF-8',
       beforeSend: function(xhr, settings) {
         xhr.setRequestHeader('Accept', settings.accepts.json);
       }
